@@ -3,7 +3,7 @@ import axiosWithAuth from "../utils/axiosWithAuth";
 
 const Login = props=> {
 
-  const credentials ={ username: "Lambda School", password: "i<3Lambda4"};
+  const credentials ={ username: "Lambda School", password: "i<3Lambd4"};
   
   // make a post request to retrieve a token from the api
   // when you have handled the token, navigate to the BubblePage route
@@ -30,7 +30,7 @@ const Login = props=> {
     <label htmlFor="username">Username:</label>
         <input type="text" name="username" placeholder="Lambda School" />
         <label htmlFor="password">Password:</label>
-        <input type="password" name="password" placeholder="i<3Lambda4" />
+        <input type="password" name="password" placeholder="i<3Lambd4" />
         <button type="submit">Login</button>
     </form>
     </div>
