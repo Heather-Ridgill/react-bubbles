@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import axiosWithAuth from "../utils/axiosWithAuth";
-import { props } from "bluebird";
+// import { props } from "bluebird";
 
 const initialColor = {
   color: "",
@@ -12,7 +12,7 @@ const ColorList = ({ colors, updateColors }) => {
   
   const [editing, setEditing] = useState(false);
   const [colorToEdit, setColorToEdit] = useState(initialColor);
-// const [addColor, setAddColor] = useState(initialColor);
+const [addColor, setAddColor] = useState(initialColor);
 
   const editColor = color => {
     setEditing(true);

@@ -13,7 +13,7 @@ const Login = props=> {
     .post("login", credentials)
       .then(res => {
         localStorage.setItem("token", res.data.payload);
-        props.history.push("/bubbles");
+        props.history.push("/colors");
       })
       .catch(err => {
         console.log("Error: ", err);
